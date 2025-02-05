@@ -10,7 +10,7 @@ jobs:
 
       - name: set color
         id: color-selector
-        run: echo "SELECTED_COLOR=green" >> "$GITHUB_OUTPUT"
+        run: echo "SELECTED_COLOR=green" >> "$VARIABLE"
       - name: get color
         env:
           SELECTED_COLOR: ${{steps.color-selector.outputs.SELECTEDCOLOR}}
