@@ -8,11 +8,11 @@ jobs:
        - name: Checkout Code
          uses: actions/checkoout@v2
        - name: Run build
-         uses: echo "Building the Project.."
+         run: echo "Building the Project.."
   
    test:
      #needs: build
      runs-on: ubuntu-latest
      steps:
        - name: Run tests
-         uses: echo "Running tests..."
+         run: echo "Running tests..."
