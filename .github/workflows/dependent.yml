@@ -5,14 +5,14 @@ jobs:
    build:
      runs-on: ubuntu-latest
      steps:
-       -name: Checkout Code
-        uses: actions/checkoout@v2
-       -name: Run build
-        uses: echo "Building the Project.."
+       - name: Checkout Code
+         uses: actions/checkoout@v2
+       - name: Run build
+         uses: echo "Building the Project.."
   
    test:
      #needs: build
      runs-on: ubuntu-latest
      steps:
-       -name: Run tests
-        uses: echo "Running tests..."
+       - name: Run tests
+         uses: echo "Running tests..."
