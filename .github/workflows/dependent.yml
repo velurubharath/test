@@ -1,4 +1,4 @@
-Name: Depednednt
+name: Depednednt
 on:
    workflow_dispatch
 jobs:
