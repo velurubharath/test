@@ -1,0 +1,19 @@
+name: mMatrix
+on:
+  workflow_dispatch
+jobs:
+  test-matrix:
+    runs-on: ${{matrix.os}}
+
+  strategy:
+    matrix:
+      os: [ubuntu-latest, windows-latest, macos-latest]
+      node-version: [16,18]
+  steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{matrix.node-version}}
